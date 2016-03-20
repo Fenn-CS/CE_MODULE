@@ -8,7 +8,7 @@
 **Constraint
 *Can only convert from base between 2 and 32
 */
-package binary;
+package number;
 
 /**
  *
@@ -88,5 +88,9 @@ public class Number {
         num /=base;
         } 
         return Reverse(Conversion);
+    }
+    public String ToWords(int number){
+        
+       return null; 
     }
 }

@@ -3,8 +3,8 @@
  * Licensed to be compatible with the Scilab CeCILL license.
  */
 package ce_module;
-import binary.Number;
-import binary.TestCase;
+import number.Number;
+import number.TestCase;
 /**
  *
  * @author Fon E. Noel Nfebe
@@ -29,19 +29,7 @@ public class CE_MODULE {
         }catch(Exception te){
             te.printStackTrace();
         }
-       /*
-        Number number = new Number(45,10);
-        System.out.println("That Converts To:"+number.ConvertToBase(32));
-        number = new Number("F",16); 
-        System.out.println("That Converts To:"+number.ConvertToBase(10));
-        number = new Number("1000",2);
-        System.out.println("That Converts To:"+number.ConvertToBase(8));
-        number = new Number("25FF",16);
-        System.out.println("That Converts To:"+number.ConvertToBase(8));
-        number = new Number(22777,8);
-        System.out.println("That Converts To:"+number.ConvertToBase(2));
-        
-        */
+      
     }
     
 }
