@@ -15,10 +15,12 @@ package number;
  * @author FENN
  */
 public class Number {
-  private String Snumber;
-  private  int number;
-  private  int base;
+  protected String Snumber;
+  protected  int number;
+  protected  int base;
   //Constructor for numbers with bases less than 10;
+  public Number(){
+  }
   public  Number(int number, int base){
       this.number=number;
       this.base=base;
@@ -93,4 +95,19 @@ public class Number {
         
        return null; 
     }
+   public Number[] Sort(Number[] arr)
+{
+   for(int i=1;i<arr.length;i++)
+   {
+      int index = arr[i].number; int j = i;
+      while (j > 0 && arr[j-1].number > index)
+      {
+           arr[j].number = arr[j-1].number;
+           j--;
+      }
+      arr[j].number = index;
+} 
+   return arr;
+}
+    
 }

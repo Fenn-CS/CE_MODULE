@@ -11,7 +11,7 @@ import  org.junit.Test;
  *
  * @author fenn
  */
-public class TestCase{
+public class TestCase extends Number{
    @Test
    public void Base2Conversion() throws Exception{
        Number number = new Number(22777,8);
@@ -43,6 +43,14 @@ public class TestCase{
      Number number = new Number(45,10);
      String expected ="1D";
      assertEquals(expected,number.ConvertToBase(32));
+       
+   }
+   @Test
+     public void Sort(){
+        Number[] arr = {new Number(10,10),new Number(2,10),new Number(3,10),new Number(1,10)};
+        Number[] expected = {new Number(1,10),new Number(2,10),new Number(3,10),new Number(10,10)};
+        for(int i=0;i<arr.length;i++)
+            assertEquals(expected[i].number, new Number().Sort(arr)[i].number);
        
    }
        

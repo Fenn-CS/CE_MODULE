@@ -25,6 +25,7 @@ public class CE_MODULE {
         test.Base10Conversion();
         test.Base16Conversion();
         test.Base32Conversion();
+        test.Sort();
         System.out.println("Everything worked as expected! :)");
         }catch(Exception te){
             te.printStackTrace();
