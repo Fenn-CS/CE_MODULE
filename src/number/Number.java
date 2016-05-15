@@ -119,7 +119,7 @@ public class Number {
     }
 
     public String ToWords(Number number) {
-     
+       String man;
         
         return null;
     }
